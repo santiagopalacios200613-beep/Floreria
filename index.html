@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florería Arreglos Florales - Apodaca</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="navbar-principal">
+        <div class="logo">
+            <img src="imagen/logo.jpeg" alt="Logo Florería">
+        </div>
+
+        <nav class="links">
+            <a href="index.html">INICIO</a>
+            <a href="Arreglo.html">ARREGLOS</a>
+            <a href="informacion.html">INFORMACIÓN</a>
+        </nav>
+
+      <div class="buscador-form">
+    
+</div>
+    </header>
+
+    <main class="contenedor">
+        
+        <div id="indicadoresCarrusel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#indicadoresCarrusel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#indicadoresCarrusel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#indicadoresCarrusel" data-bs-slide-to="2"></button>
+            </div>
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagen/Arreglo1.webp"  class="d-block w-100" alt="Arreglo 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagen/Arreglo2.webp"  class="d-block w-100" alt="Arreglo 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagen/productos/productos/ramo8.jpg"  class="d-block w-100" alt="Arreglo 3">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#indicadoresCarrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#indicadoresCarrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <section class="productos-seccion">
+            <h2>Nuestros Arreglos</h2>
+            <p><font size="6">Descubre nuestra selección de arreglos florales únicos y hermosos para cualquier ocasión.</font></p>
+            <b></b>
+            <b></b>
+            <p><font size="6">Nuestros arreglos son hechos con flores frescas de la mejor calidad. Dale un vistazo a  nuestros productos recomendados</font></p>
+        </section>
+
+        <section class="inicio-productos">
+            
+    <div class="botones-filtros">
+     
+    <button class="boton-cafe" onclick="ordenarPrecio('menor')">PRECIO (Menor a Mayor)</button>
+    <button class="boton-cafe" onclick="ordenarPrecio('mayor')">PRECIO (Mayor a Menor)</button>
+
+    </div>
+
+    <div class="grid-recomendados">
+        
+        <div class="tarjeta-flor">
+            <div class="imagen-contenedor">
+                <img src="imagen/Arreglo1.webp" alt="Ramo Delirio">
+                <a href="https://api.whatsapp.com/send/?phone=528136950230&text&type=phone_number&app_absent=0" class="icono-flotante-ws">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                </a>
+            </div>
+            <h4>RAMO DE ROSAS COMBINADAS</h4>
+            <p>PRECIO: $300</p>
+        </div>
+
+        <div class="tarjeta-flor">
+            <div class="imagen-contenedor">
+                <img src="imagen/Arreglo2.webp" alt="Ramo de Rosas">
+                <a href="https://api.whatsapp.com/send/?phone=528136950230&text&type=phone_number&app_absent=0" class="icono-flotante-ws">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                </a>
+            </div>
+            <h4>CONJUNTO  SAN VALENTIN</h4>
+            <p>PRECIO: $550</p>
+        </div>
+
+        <div class="tarjeta-flor">
+            <div class="imagen-contenedor">
+                <img src="imagen/productos2/productos2/tulipanes/tulipan12.jpg" alt="Conjunto 2 San Valentin">
+                <a href="https://api.whatsapp.com/send/?phone=528136950230&text&type=phone_number&app_absent=0" class="icono-flotante-ws">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                </a>
+            </div>
+            <h4>RAMO DE TULIPANES 12</h4>
+            <p>PRECIO: $1300</p>
+        </div>
+
+        <div class="tarjeta-flor">
+    <div class="imagen-contenedor">
+        <img src="imagen/productos2/productos2/lirios/lirios1.jpg" alt="cONJUNTO 1 LIRIOS"> 
+        <a href="https://api.whatsapp.com/send/?phone=528136950230&text&type=phone_number&app_absent=0" class="icono-flotante-ws">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
+    </div>
+    <h4>CONJUNTO 1 LIRIOS</h4> <p>PRECIO: $300</p> </div>
+
+    <div class="tarjeta-flor">
+    <div class="imagen-contenedor">
+        <img src="imagen/productos2/productos2/tulipanes/tulipan1.jpg" alt="Nombre del Arreglo"> 
+        <a href="https://api.whatsapp.com/send/?phone=528136950230&text&type=phone_number&app_absent=0" class="icono-flotante-ws">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
+    </div>
+    <h4>RAMO DE TULIPANES 1</h4> <p>PRECIO: $350</p> </div>
+
+    <div class="tarjeta-flor">
+    <div class="imagen-contenedor">
+        <img src="imagen/productos2/productos2/rosas/rosas1.png" alt="Nombre del Arreglo"> 
+        <a href="https://api.whatsapp.com/send/?phone=528136950230&text&type=phone_number&app_absent=0" class="icono-flotante-ws">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
+    </div>
+    <h4>RAMO DE ROSAS 1</h4> <p>PRECIO: $550</p> 
+    </div>
+
+     <div class="tarjeta-flor">
+            <div class="imagen-contenedor">
+                <img src="imagen/productos2/productos2/girasoles/girasoles8.jpg" class="img-fluid" alt="Ramo">
+                
+                <a href="#" class="icono-flotante-ws">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+                         alt="WS" width="3" height="3">
+                </a>
+            </div>
+            <h4>RAMO DE GIRASOL 8</h4>
+            <p>PRECIO: $600</p>
+        </div>
+        <div class="tarjeta-flor">
+            <div class="imagen-contenedor">
+                <img src="imagen/productos2/productos2/cumpleaños o aniversario/3.jpg" class="img-fluid" alt="Ramo">
+                
+                <a href="#" class="icono-flotante-ws">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+                         alt="WS" width="3" height="3">
+                </a>
+            </div>
+            <h4>CONJUNTO 1</h4>
+            <p>PRECIO: $400</p>
+        </div>
+
+        <div class="tarjeta-flor">
+            <div class="imagen-contenedor">
+                <img src="imagen/productos2/productos2/cumpleaños o aniversario/18.jpg" class="img-fluid" alt="Ramo">
+                
+                <a href="#" class="icono-flotante-ws">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+                         alt="WS" width="3" height="3">
+                </a>
+            </div>
+            <h4>CONJUNTO 6</h4>
+            <p>PRECIO: $1400</p>
+        </div>
+</div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+    <div class="container d-flex justify-content-between align-items-center">
+        <p class="m-0">©2026 FLORERIA ARREGLOS FLORALES-APODACA - TODOS LOS DERECHOS RESERVADOS</p>
+
+        <div class="d-flex align-items-center">
+            <span style="font-size: 10px; margin-right: 15px; letter-spacing: 1px;">REDES SOCIALES</span>
+            
+            <div class="iconos-contenedor">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="funciones_floreria.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
